@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+
+:root {
+  --font-family: "Lato", sans-serif;
+  --group-title-color: rgb(36, 55, 78);
+  --job-link-color: rgb(67, 83, 105);
+  --job-link-hover: rgb(0, 137, 255);
+  --job-link-hover-background: rgb(246, 249, 255);
+  --button-color: #2d9bf3;
+  --button-text-color: white;
+  --button-hover: #2481d7;
+  --background-span-color: #48578c;
+  --job-location-color: rgb(154, 168, 189);
+}
+body {
+  font-family: var(--font-family);
+  color: var(--group-title-color);
+  background-color: white;
+}
+
+/* Jobs Listing Page */
+.group-title {
+  color: var(--group-title-color);
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 12px 0px 12px 10px;
+  margin-bottom: 0;
+  margin-top: 18px;
+  border-bottom: solid 1px #dadada;
+}
+.job-link {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--group-title-color);
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.job-link::after {
+  display: none;
+}
+.job-opening {
+  margin-top: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+.job-opening:hover {
+  background-color: var(--job-link-hover-background);
+}
+.job-opening:hover .job-link {
+  color: var(--job-link-hover);
+}
+.job-location {
+  color: var(--job-location-color);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Jobs Page */
+.job-description {
+  padding-left: 1.6rem;
+}
+.job-details {
+  padding-left: 1.6rem;
+}
+.job-details-location {
+  color: #9bb0bf;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 4px;
+}
+.job-information span {
+  background: var(--background-span-color);
+}
+.job-title {
+  font-size: 34px;
+  font-weight: 500;
+  color: var(--group-title-color);
+  margin-bottom: 10px;
+}
+.job-description h1,
+.job-description h2,
+.job-description h3,
+.job-description h4,
+.job-description h5,
+.job-description h6 {
+  font-weight: 500;
+  color: var(--group-title-color);
+}
+.job-application form {
+  border: none;
+}
+.submit-button {
+  background: var(--button-color);
+  padding: 14px 18px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.submit-button:hover {
+  background: var(--button-hover);
+  transform: translate3d(0, 1px, 0);
+}
+.submit-button:focus {
+  box-shadow: none;
+}
+.submit-button a {
+  color: var(--button-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.submit-button a::after {
+  display: none;
+}
+
+/* Thanks Page */
+.job-application-complete-heading {
+  color: var(--job-link-color);
+  font-weight: 500;
+  font-size: 34px;
+  margin-top: 0;
+}

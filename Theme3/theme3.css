@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+/* Main Page Colors */
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --group-title-color: rgb(36, 55, 78);
+  --job-link-color: rgb(67, 83, 105);
+  --job-location-color: #939da8;
+  --headings-color: #2b2a35;
+  --button-color: #334ac0;
+  --button-text-color: white;
+  --button-hover: #586ee0;
+  --main-page-color: #1c1d1e;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--main-page-color);
+  background-color: white;
+}
+
+/* Jobs Listing Page */
+.group-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  border-bottom: none;
+  margin-top: 0;
+}
+
+.group-title:not(:first-of-type) {
+  margin-top: 45px;
+}
+
+.job-opening {
+  margin-top: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.job-link {
+  font-size: 18px;
+  color: var(--group-title-color);
+  text-transform: capitalize;
+}
+.job-link::after {
+  display: none;
+}
+.job-location {
+  color: var(--job-location-color);
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.job-opening::after {
+  display: inline-block;
+  content: "❯";
+  color: black;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Query for Phone Screen Sizes */
+@media only screen and (max-width: 375px) {
+  .job-opening::after {
+    display: none;
+  }
+}
+
+/* Jobs Page */
+.job-details-location {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--group-title-color);
+  text-transform: capitalize;
+}
+.job-information span {
+  background: var(--button-color);
+}
+.job-title {
+  color: var(--headings-color);
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.job-description h1,
+.job-description h2,
+.job-description h3,
+.job-description h4,
+.job-description h5,
+.job-description h6 {
+  font-weight: 400;
+  color: var(--headings-color);
+}
+.job-application form {
+  border: none;
+}
+
+.submit-panel {
+  display: flex;
+  justify-content: center;
+}
+.submit-button {
+  margin-top: 14px;
+  background: var(--button-color);
+  padding: 12px 20px 14px 20px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.submit-button:hover {
+  background: var(--button-hover);
+}
+.submit-button:focus {
+  box-shadow: none;
+}
+.submit-button a {
+  color: var(--button-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.submit-button a::after {
+  display: none;
+}
+
+/* Thanks Page */
+.job-application-complete-heading {
+  color: var(--headings-color);
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 0;
+}
