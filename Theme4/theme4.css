@@ -116,14 +116,26 @@ body {
 
 /* Jobs Page */
 .job-details-location {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 15px;  
   color: var(--job-subheading-color);
   text-transform: capitalize;
 }
-.job-information span {
-  background: var(--button-color);
+.job-details-location,
+.job-type,
+.job-experience,
+.job-compensation {
+   
+   color:white;
+   background: var(--button-color);
+   border-radius: 6px;
+   padding: 4px 6px;
 }
+
+.job-information svg {
+   stroke: white;
+}
+
+
 .job-title {
   color: var(--job-title-color);
   font-size: 34px;
