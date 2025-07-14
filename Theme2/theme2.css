@@ -69,15 +69,23 @@ body {
 .job-details {
   padding-left: 1.6rem;
 }
-.job-details-location {
-  color: #9bb0bf;
-  font-weight: 600;
+
+.job-details-location,
+.job-type,
+.job-experience,
+.job-compensation {
+   color: white;
+  font-weight: 500;
   font-size: 14px;
-  padding-left: 4px;
+   background: var(--background-span-color);
+   border-radius: 6px;
+   padding: 4px 6px;
 }
-.job-information span {
-  background: var(--background-span-color);
+
+.job-information svg {
+   stroke: white;
 }
+
 .job-title {
   font-size: 34px;
   font-weight: 500;
