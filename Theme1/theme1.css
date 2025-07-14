@@ -52,12 +52,21 @@ body {
 }
 
 /* Jobs Page */
-.job-details-location {
-  color: var(--job-location-color);
-  font-weight: 300;
-  font-size: 14px;
-  padding-left: 4px;
+.job-details-location,
+.job-type,
+.job-experience,
+.job-compensation {
+   font-weight: 300;
+   color:white;
+   background: var(--button-color);
+   border-radius: 6px;
+   padding: 4px 6px;
 }
+
+.job-information svg {
+   stroke: white;
+}
+
 .job-title {
   font-size: 34px;
   font-weight: 300;
